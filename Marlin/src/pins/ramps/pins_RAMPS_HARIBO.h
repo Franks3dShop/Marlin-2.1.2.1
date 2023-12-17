@@ -112,15 +112,15 @@
     #define X_MIN_PIN                          3  // X-
   #endif
   #ifndef X_MAX_PIN
-    #define X_MAX_PIN                          2  // X+
+    #define X_MAX_PIN                          3 //2  // X+
   #endif
 #endif
 #ifndef Y_STOP_PIN
   #ifndef Y_MIN_PIN
-    #define Y_MIN_PIN                         14  // Y-
+    #define Y_MIN_PIN                         2 //14  // Y-
   #endif
   #ifndef Y_MAX_PIN
-    #define Y_MAX_PIN                         15  // Y+
+    #define Y_MAX_PIN                         2 //15  // Y+
   #endif
 #endif
 #ifndef Z_STOP_PIN
@@ -128,7 +128,7 @@
     #define Z_MIN_PIN                         18  // Z-
   #endif
   #ifndef Z_MAX_PIN
-    #define Z_MAX_PIN                         19  // Z+
+    #define Z_MAX_PIN                         -1 //19  // Z+
   #endif
 #endif
 
@@ -146,14 +146,14 @@
 #define X_DIR_PIN                             55
 #define X_ENABLE_PIN                          38
 #ifndef X_CS_PIN
-  #define X_CS_PIN                            53
+  #define X_CS_PIN                            14 //53
 #endif
 
 #define Y_STEP_PIN                            60
 #define Y_DIR_PIN                             61
 #define Y_ENABLE_PIN                          56
 #ifndef Y_CS_PIN
-  #define Y_CS_PIN                            49
+  #define Y_CS_PIN                            15 //49
 #endif
 
 #ifndef Z_STEP_PIN
@@ -166,7 +166,7 @@
   #define Z_ENABLE_PIN                        62
 #endif
 #ifndef Z_CS_PIN
-  #define Z_CS_PIN                            40
+  #define Z_CS_PIN                            53 //40
 #endif
 
 #ifndef E0_STEP_PIN
@@ -179,7 +179,7 @@
   #define E0_ENABLE_PIN                       24
 #endif
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN                           42
+  #define E0_CS_PIN                           59 //42
 #endif
 
 #ifndef E1_STEP_PIN
